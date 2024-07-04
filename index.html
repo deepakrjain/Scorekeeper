@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        select {
+            width: 40px;
+            height: 25px;
+        }
+
+        #p1button,
+        #p2button {
+            height: 40px;
+            width: 120px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: 0.2s ease-in-out;
+            margin: 20px 15px;
+        }
+
+        #p1button:hover,
+        #p2button:hover {
+            background-color: greenyellow;
+        }
+
+        button[id="reset"] {
+            height: 40px;
+            width: 100px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: black;
+            transition: 0.2s ease-in-out;
+            margin: 20px 50px;
+        }
+
+        button[id="reset"]:hover {
+            background-color: yellow;
+        }
+
+        table {
+            margin: 0 auto;
+            text-align: center;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Welcome to 2 Player Table Tennis</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8mWusR0oQlci2vlvRD14BWLOVFG5auPYiow&s">
+    <div id="options">
+        <h2>Select maximum points <select>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br></h2>
+    </div>
+    <div id="scoreboard">
+        <table border="5px" cellspacing="5px" bordercolor="brown" cellpadding="10px">
+            <tr>
+                <td colspan="2">
+                    <h2 id="winner">LIVE UPDATES</h2>
+                </td>
+            </tr>
+            <tr>
+                <td id="p1box">
+                    <h2>P1 : <span id="p1points"></span></h2>
+                </td>
+                <td id="p2box">
+                    <h2>P2 : <span id="p2points"></span></h2>
+                </td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <div>
+    <button id="p1button">Player 1 scores</button>
+    <button id="p2button">Player 2 scores</button>
+    <button id="reset">Reset</button>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
