@@ -14,7 +14,6 @@ CSS for styling and layout,
 JavaScript for interactivity and score management
 
 Usage:-
-Open index.html in your web browser.
 Select the maximum points to win.
 Use the buttons to keep track of each player's score.
 
